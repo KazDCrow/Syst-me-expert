@@ -1,0 +1,70 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "app.App",
+            "projectName": "Travail final_185c50c6"
+        },
+        {
+            "type": "java",
+            "name": "Controlleur",
+            "request": "launch",
+            "mainClass": "controlleur.Controlleur",
+            "projectName": "Travail final_bfd6acde"
+        },
+        {
+            "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "modele.Test",
+            "projectName": "Travail final_185c50c6"
+        },
+        {
+            "type": "java",
+            "name": "Controlleur",
+            "request": "launch",
+            "mainClass": "controlleur.Controlleur",
+            "projectName": "Travail final_185c50c6"
+        },
+        {
+            "type": "java",
+            "name": "TestForceSecurite",
+            "request": "launch",
+            "mainClass": "modele.TestForceSecurite",
+            "projectName": "Travail final_df7518b"
+        },
+        {
+            "type": "java",
+            "name": "TestEmployeMaintenance",
+            "request": "launch",
+            "mainClass": "modele.TestEmployeMaintenance",
+            "projectName": "Travail final_df7518b"
+        },
+        {
+            "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "pkgTest.Test",
+            "projectName": "Travail final_df7518b"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "modele.Test",
+            "projectName": "Travail final_df7518b"
+        }
+    ]
+}
