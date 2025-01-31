@@ -1,0 +1,1 @@
+/usr/bin/c++  -std=c++11 -g CMakeFiles/TP1.dir/Principal.cpp.o CMakeFiles/TP1.dir/Regle.cpp.o CMakeFiles/TP1.dir/SystemeExpert.cpp.o -o TP1 

@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/kazdcrow/Documents/Documents/Clion/Été 2021 - Projet session/TP1/Code tp1/Regle.h
+iostream
+-
+stdexcept
+-
+string
+-
+list
+-
+
+/home/kazdcrow/Documents/Documents/Clion/Été 2021 - Projet session/TP1/Code tp1/SystemeExpert.cpp
+SystemeExpert.h
+/home/kazdcrow/Documents/Documents/Clion/Été 2021 - Projet session/TP1/Code tp1/SystemeExpert.h
+
+/home/kazdcrow/Documents/Documents/Clion/Été 2021 - Projet session/TP1/Code tp1/SystemeExpert.h
+iostream
+-
+fstream
+-
+Regle.h
+/home/kazdcrow/Documents/Documents/Clion/Été 2021 - Projet session/TP1/Code tp1/Regle.h
+vector
+-
+list
+-
+algorithm
+-
+
