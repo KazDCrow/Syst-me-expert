@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="Projet_Final.Pages.Admin.AdherentPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Projet_Final.Pages.Admin"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Classes="using:Projet_Final.Classes"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <Grid x:Name="mainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Orientation="Horizontal" Margin="30 30 0 0" Grid.Row="0" VerticalAlignment="Center" Spacing="20">
+            <TextBlock  FontSize="32" FontWeight="SemiBold" TextDecorations="Underline" VerticalAlignment="Center" >Liste des adhérents</TextBlock>
+            <Button x:Name="btn_exporter" Content="Exporter en csv" VerticalAlignment="Center" Margin="0 8 0 0" Click="btn_exporter_Click"/>
+        </StackPanel>
+        <Button Background="Transparent" Margin="0 30 30 0" BorderThickness="0" Name="btn_ajouter" Click="btn_ajouter_Click" FontSize="18" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center">+ Ajouter un adhérent</Button>
+            
+            <GridView x:Name="gv_liste_adherents" Margin="20" Grid.Row="1" SelectionChanged="gv_liste_adhrents_SelectionChanged">
+                <GridView.ItemTemplate>
+                    <DataTemplate x:DataType="Classes:Adherent">
+                        <Grid Margin="10" MinWidth="425" Padding="10" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="LightGray" BorderThickness="4" CornerRadius="10" RowSpacing="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                            <TextBlock Margin="0 0 0 10" FontSize="24" FontWeight="Bold" Text="{x:Bind Id}" TextDecorations="Underline" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                        <Button Margin="0 0 0 10" Name="btn_supprimer" Click="btn_supprimer_Click" Content="X" Grid.Row="0" HorizontalAlignment="Right" Padding="5 1 5 1" Background="Transparent" BorderThickness="2"  VerticalAlignment="Center"/>
+
+                        <StackPanel Orientation="Horizontal" Spacing="4" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="1">
+                                <TextBlock Text="{x:Bind Prenom}" FontSize="18" FontWeight="SemiBold" />
+                                <TextBlock Text="{x:Bind Nom}" FontSize="18" FontWeight="SemiBold"/>
+                            </StackPanel>
+                        <TextBlock Grid.Row="2" Text="{x:Bind Adresse}"/>
+                        <TextBlock Grid.Row="3" Text="{x:Bind Date_naissanceStr}" HorizontalAlignment="Right"/>
+                        <TextBlock Grid.Row="3" Text="{x:Bind AgeStr}" />
+
+                    </Grid>
+                    </DataTemplate>
+                </GridView.ItemTemplate>
+            </GridView>
+        </Grid>
+</Page>

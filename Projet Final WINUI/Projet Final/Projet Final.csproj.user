@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <None Update="App.xaml">
+      <SubType>Designer</SubType>
+    </None>
+    <Page Update="Pages\Admin\StatistiquePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\User\SeanceUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Admin\ModificationSeancePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\DialogueAjoutSeance.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Admin\SeanceAdminPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\DialogueAjoutActivite.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Admin\ModificationActivite.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Admin\ActiviteAdminPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Admin\ModificationAdherent.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\User\ActiviteUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\DialogueAjout.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <None Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </None>
+    <Page Update="Pages\Admin\AdherentPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\TestAdherentPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

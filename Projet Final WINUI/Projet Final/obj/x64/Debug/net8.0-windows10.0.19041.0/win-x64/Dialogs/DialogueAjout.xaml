@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentDialog x:ConnectionId='1'
+    x:Class="Projet_Final.Dialogs.DialogueAjout"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Projet_Final.Dialogs"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+                                                         
+                                   >
+
+    <Grid x:ConnectionId='2' Padding="5" x:Name="mainGrid" ColumnSpacing="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="Ajout d'un adhérent" Margin="15" FontSize="40" 
+                       FontFamily="Terminal" Grid.ColumnSpan="2" FontWeight="SemiBold"
+                       HorizontalAlignment="Center"/>
+
+        <StackPanel Grid.Row="1" Padding="5" Grid.Column="0" >
+            <TextBox x:ConnectionId='13' x:Name="tbxPrenomAjout"  Header="Prénom de l'adhérent" VerticalAlignment="Top"/>
+            <TextBlock x:ConnectionId='14' TextWrapping="Wrap" x:Name="tblErreurPrenom" Foreground="Red" FontSize="15" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="1" Padding="5">
+            <TextBox x:ConnectionId='11' x:Name="tbxNomAjout"  Header="Nom de l'adhérent"  VerticalAlignment="Top"/>
+            <TextBlock x:ConnectionId='12' x:Name="tblErreurNom" TextWrapping="Wrap" Foreground="Red" FontSize="15" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Grid.Column="0" Padding="5">
+            <TextBox x:ConnectionId='9' x:Name="tbxAdresseAjout" Header="Adresse de l'adhérent" VerticalAlignment="Top"></TextBox>
+            <TextBlock x:ConnectionId='10' x:Name="tblErreurAdresse" TextWrapping="Wrap" Foreground="Red" FontSize="15" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Grid.Column="1" HorizontalAlignment="Stretch" Padding="5">
+            <CalendarDatePicker x:ConnectionId='7' x:Name="calendar_dateAjout" HorizontalAlignment="Stretch"                                                                         Header="Date de naissance de l'adhérent"></CalendarDatePicker>
+            <TextBlock x:ConnectionId='8' x:Name="tblErreurDate" TextWrapping="Wrap" Foreground="Red" FontSize="15" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="3" Grid.Column="0" Padding="5">
+            <CheckBox x:ConnectionId='6' x:Name="chk_admin"                                                          >Administrateur</CheckBox>
+        </StackPanel>
+
+        <StackPanel x:ConnectionId='3' x:Name="sp_pass" Grid.Row="4" Grid.ColumnSpan="2" Padding="5" Visibility="Collapsed">
+            <TextBox x:ConnectionId='4' x:Name="tbxMotPassAjout" Header="Mot de passe de l'administrateur"></TextBox>
+            <TextBlock x:ConnectionId='5' x:Name="tblErreurPass" Foreground="Red" FontSize="15" />
+        </StackPanel>
+
+    </Grid>
+</ContentDialog>
+

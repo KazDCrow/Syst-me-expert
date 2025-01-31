@@ -1,0 +1,15 @@
+App.xbf
+Dialogs\DialogueAjout.xbf
+Dialogs\DialogueAjoutActivite.xbf
+Dialogs\DialogueAjoutSeance.xbf
+MainWindow.xbf
+Pages\Admin\ActiviteAdminPage.xbf
+Pages\Admin\AdherentPage.xbf
+Pages\Admin\ModificationActivite.xbf
+Pages\Admin\ModificationAdherent.xbf
+Pages\Admin\ModificationSeancePage.xbf
+Pages\Admin\SeanceAdminPage.xbf
+Pages\Admin\StatistiquePage.xbf
+Pages\TestAdherentPage.xbf
+Pages\User\ActiviteUserPage.xbf
+Pages\User\SeanceUserPage.xbf
